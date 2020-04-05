@@ -1,0 +1,8 @@
+1. C:Program Files\Java\jdk1.8.0_162
+2. C:Program Files\Java\jdk1.8.0_162\bin
+3. Utilizar o comando: "javac nomeDoArquivo"
+4. Utilizar o comando: "java arquivo.jar"
+5. Variaveis que o ambiente usa para achar as coisas
+6. Só é possível criar uma variavel ambiente se for no seu diretório
+7. (windows): painel de controle, Sistema e Segurança, Sistema, Configurações avançadas do sistema, Variaveis do ambiente
+8. Ambiente onde o java esta localizado
