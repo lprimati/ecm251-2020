@@ -1,4 +1,4 @@
-package Interface;
+package com.company.Interface;
 
 import com.company.models.Usuario;
 

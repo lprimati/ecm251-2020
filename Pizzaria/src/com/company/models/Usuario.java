@@ -1,5 +1,9 @@
 package com.company.models;
 
+/**
+ * @author Lucas Primati Menezes, 16.00683-6
+ * usuario que esta fazendo os pedidos, responsavel.
+ */
 public class Usuario {
     private String nome;
     private String senha;
@@ -10,7 +14,7 @@ public class Usuario {
         this.email = email;
         this.senha = senha;
     }
-    /** retorna String da senha */
+    // retorna String da senha
     public String getSenha(){
         return senha;
     }
