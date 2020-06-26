@@ -1,12 +1,17 @@
 package com.company.controllers;
 
-import java.sql.SQLOutput;
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import com.company.Enum.*;
-import com.company.models.*;
+import com.company.Enum.Estado;
+import com.company.Enum.Pagamento;
+import com.company.Excecoes.ErroDeID;
+import com.company.models.Pedidos;
+import com.company.models.Usuario;
+
+
 
 public class NovoPedido {
     private ArrayList<Pedidos> listaPedidos = new ArrayList<Pedidos>();
@@ -59,13 +64,17 @@ public class NovoPedido {
                     Pedidos selecionarPedido = this.getPedidoPorID(Id);
 
                     System.out.println("Alterar o Estado do pedido");
-                    selecionarPedido.setEstado(selecionarEstado);
+                    selecionarPedido.setEstado(selecionarEstado());
 
                     System.out.println("Pedido alterado com sucesso!");
                     System.out.println(selecionarPedido);
                     break;
-                }catch (ArrayIndexOutOfBoundsException e){
+                }catch (ArrayIndexOutOfBoundsException e) {
                     System.out.println("Digitar o Estado novamente!");
+                }catch (ErroDeID e) {
+                    System.out.println(e.getMessage());
+                }catch (Exception e){
+                    System.out.println(e.getMessage());
                     break;
                 }
             }
@@ -97,5 +106,21 @@ public class NovoPedido {
         return Estado.values()[estado-1];
     }
 
-    private Pedidos getPedidoPorID(String Id) throws
+    private Pedidos getPedidoPorID(String Id) throws ErroDeID{
+        for (Pedidos pedidos : listaPedidos){
+            if (pedidos.getID().equals(Id)){
+                return pedidos;
+            }
+        }
+        throw new ErroDeID("ID não identificado! ");
+    }
+
+    private String geradorID(){
+        Random random = new Random();
+        String idGerado = "";
+        for (int i = 0; i < 3; i++){
+            idGerado += random.nextInt(10);
+        }
+        return idGerado;
+    }
 }

@@ -23,7 +23,7 @@ public class Pedidos {
      * @param pagamento forma de pagamento
      * @param estado estado da entrega, se esta sendo preparado, ou a caminho, etc
      */
-    private Pedidos(String id, String descricao, Double valor, Pagamento pagamento, Estado estado){
+    public Pedidos(String id, String descricao, Double valor, Pagamento pagamento, Estado estado){
         ID = id;
         this.descricao = descricao;
         this.valor = valor;
@@ -50,6 +50,6 @@ public class Pedidos {
      */
     @Override
     public String toString() {
-        return "Pedido com o ID: " + ID + ", descriçao: " + descricao + ", estado atual do pedido: " + estado + ", forma que deseja pagar: " + pagamento + "e o valor do pedido: " + valor;
+        return "Pedido com o ID: " + ID + ", descriçao: " + descricao + ", estado atual do pedido: " + estado + ", forma que deseja pagar: " + pagamento + " e o valor do pedido: " + valor;
     }
 }
