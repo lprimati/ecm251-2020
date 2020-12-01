@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/domain/entities/pokemon_types.dart';
+import 'package:pokemao_dexter/domain/entities/pokemon_types.dart';
 
 class PokeTypes {
   const PokeTypes({

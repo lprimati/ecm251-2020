@@ -1,4 +1,4 @@
-import 'package:pokedex/domain/entities/generation.dart';
+import 'package:pokemao_dexter/domain/entities/generation.dart';
 
 const List<Generation> generations = [
   Generation(

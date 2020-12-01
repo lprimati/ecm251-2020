@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/usecase.dart';
-import '../../data/repositories/pokemon_repository.dart';
+import 'package:pokemao_dexter/data/repositories/pokemon_repository.dart';
 import '../entities/pokemon.dart';
 
 class GetPokemonsParams {

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:pokedex/configs/colors.dart';
+import 'package:pokemao_dexter/configs/colors.dart';
 
 import '../../core/extensions/string.dart';
 import '../../core/utils.dart';

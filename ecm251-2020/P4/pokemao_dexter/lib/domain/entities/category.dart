@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/routes.dart';
+import 'package:pokemao_dexter/routes.dart';
 
 class Category {
   const Category({
