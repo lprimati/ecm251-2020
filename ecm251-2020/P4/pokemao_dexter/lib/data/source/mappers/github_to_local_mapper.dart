@@ -1,8 +1,8 @@
-import 'package:pokedex/core/extensions/string.dart';
-import 'package:pokedex/data/source/github/models/pokemon.dart';
-import 'package:pokedex/data/source/local/models/pokemon.dart';
-import 'package:pokedex/data/source/local/models/pokemon_gender.dart';
-import 'package:pokedex/data/source/local/models/pokemon_stats.dart';
+import 'package:pokemao_dexter/core/extensions/string.dart';
+import 'package:pokemao_dexter/data/source/github/models/pokemon.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon_gender.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon_stats.dart';
 
 extension GithubPokemonModelToLocalX on GithubPokemonModel {
   PokemonHiveModel toHiveModel() => PokemonHiveModel()
