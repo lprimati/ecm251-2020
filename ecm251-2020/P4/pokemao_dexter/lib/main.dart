@@ -1,12 +1,13 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pokemao_dexter/configs/colors.dart';
 import 'package:pokemao_dexter/configs/constants.dart';
 import 'package:pokemao_dexter/configs/fonts.dart';
 import 'package:pokemao_dexter/data/source/local/local_datasource.dart';
 import 'package:pokemao_dexter/routes.dart';
+
+//Lucas Primati Menezes 16.00683-6
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,6 +17,11 @@ void main() async {
   runApp(ProviderScope(child: PokedexApp()));
 }
 
+Widget ProviderScope({PokedexApp child}) {
+}
+
+
+
 class PokedexApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,7 +29,7 @@ class PokedexApp extends StatelessWidget {
 
     return MaterialApp(
       color: Colors.white,
-      title: 'Flutter Pokedex',
+      title: 'Pokemao Dexter',
       theme: ThemeData(
         fontFamily: AppFonts.circularStd,
         textTheme: theme.textTheme.apply(

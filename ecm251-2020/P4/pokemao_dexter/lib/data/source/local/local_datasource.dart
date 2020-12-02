@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pokedex/data/source/local/models/pokemon.dart';
-import 'package:pokedex/data/source/local/models/pokemon_gender.dart';
-import 'package:pokedex/data/source/local/models/pokemon_stats.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon_gender.dart';
+import 'package:pokemao_dexter/data/source/local/models/pokemon_stats.dart';
 
 class LocalDataSource {
   static void initialize() async {

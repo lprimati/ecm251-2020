@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:pokedex/core/network.dart';
-import 'package:pokedex/data/source/github/models/pokemon.dart';
+import 'package:pokemao_dexter/core/network.dart';
+import 'package:pokemao_dexter/data/source/github/models/pokemon.dart';
 
 class GithubDataSource {
   static const String url =
